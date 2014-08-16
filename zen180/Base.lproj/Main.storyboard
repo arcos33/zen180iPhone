@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Home Page View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="vXZ-lx-hvc" customClass="HomePageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8V8-M5-e1n">
+                                <rect key="frame" x="28" y="504" width="265" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="homePageBrowseAudioTracksButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="browseAudioTracksACTION:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WN1-oz-BeH"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homePageMainText" translatesAutoresizingMaskIntoConstraints="NO" id="dWV-Gc-KxP">
+                                <rect key="frame" x="14" y="250" width="296" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" id="1yw-pC-cNk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1279" y="202"/>
+        </scene>
+        <!--Awakened Mind View Controller-->
+        <scene sceneID="gEU-QJ-vl1">
+            <objects>
+                <viewController storyboardIdentifier="awakenedMind" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cWL-6o-xxw" customClass="AwakenedMindViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Piq-71-iti"/>
+                        <viewControllerLayoutGuide type="bottom" id="o06-pi-sXK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OuD-P0-xaD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="640x1136-awakened-mind-background" translatesAutoresizingMaskIntoConstraints="NO" id="6za-Dx-Hxg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dGg-uI-am7" appends="YES" id="bZg-Tk-GlB"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4w-cH-Vs8">
+                                <rect key="frame" x="133" y="497" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="headphoneButton">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lockedProgramACTION:" destination="cWL-6o-xxw" eventType="touchUpInside" id="oKz-vw-NFl"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="awakened-mind-title-black" translatesAutoresizingMaskIntoConstraints="NO" id="AcT-9X-Kmq">
+                                <rect key="frame" x="55" y="22" width="220" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QcM-GQ-0HP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j2m-Lk-37Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="dGg-uI-am7">
+                    <connections>
+                        <action selector="swipeRight:" destination="cWL-6o-xxw" id="2dl-iH-f4l"/>
+                        <segue destination="ufd-6i-kxK" kind="custom" identifier="" id="pNS-2T-bun"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <view contentMode="scaleToFill" id="A2E-7t-iAo">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qL-gg-L5Y">
+                            <rect key="frame" x="139" y="220" width="42" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="2210" y="99"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="RAu-Km-MIW">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="BAf-2z-wcL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iya-u4-eu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1779" y="808"/>
+        </scene>
+        <!--Creative Mind View Controller-->
+        <scene sceneID="iLv-kA-vLQ">
+            <objects>
+                <viewController storyboardIdentifier="creativeMind" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ufd-6i-kxK" customClass="CreativeMindViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z3B-cN-Dbt"/>
+                        <viewControllerLayoutGuide type="bottom" id="FiA-aC-0cI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s77-px-tlK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="640x1136-creative-mind-background" translatesAutoresizingMaskIntoConstraints="NO" id="91s-LA-F8R">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="creative-mind-title-black" translatesAutoresizingMaskIntoConstraints="NO" id="0RH-Xc-lPJ">
+                                <rect key="frame" x="55" y="22" width="220" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEq-EX-SB5">
+                                <rect key="frame" x="133" y="497" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="headphoneButton">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lockedProgramACTION:" destination="ufd-6i-kxK" eventType="touchUpInside" id="Hte-Zj-8cc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9bu-FH-tgu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYE-ZU-5ca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2821" y="88"/>
+        </scene>
+        <!--Page Control Home View Controller-->
+        <scene sceneID="GFo-wv-xQV">
+            <objects>
+                <viewController storyboardIdentifier="PageControlHomeViewController" id="Uf6-I2-zyD" customClass="PageControlHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WyL-rB-Xqh"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Qv-FN-0uR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tq0-Nv-TZl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fgT-A2-f4s">
+                                <rect key="frame" x="150" y="469" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="fgT-A2-f4s" id="Igw-H4-Ssx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iec-0z-L1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2361" y="817"/>
+        </scene>
+        <!--Focused Mind View Controller-->
+        <scene sceneID="ugf-I7-2Vm">
+            <objects>
+                <viewController storyboardIdentifier="focusedMind" useStoryboardIdentifierAsRestorationIdentifier="YES" id="B1U-hr-bV9" customClass="FocusedMindViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NhS-vX-yLQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="VSh-s5-w0E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="loe-Io-nHt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="640x1136-focused-mind-background" translatesAutoresizingMaskIntoConstraints="NO" id="DOe-hj-Rw5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="focused-mind-title-black" translatesAutoresizingMaskIntoConstraints="NO" id="A0B-wy-CeU">
+                                <rect key="frame" x="55" y="22" width="220" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xr8-dq-DpI">
+                                <rect key="frame" x="133" y="497" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="headphoneButton">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lockedProgramACTION:" destination="B1U-hr-bV9" eventType="touchUpInside" id="pgx-Cx-mjx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hBA-r9-0aW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3184" y="93"/>
+        </scene>
+        <!--Relaxed Mind View Controller-->
+        <scene sceneID="QnX-Kw-Dpi">
+            <objects>
+                <viewController storyboardIdentifier="relaxedMind" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pEw-TD-vVA" customClass="RelaxedMindViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0ph-XC-OtN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Naq-tm-hBJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eIM-2E-BXc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="640x1136-relaxed-mind-background" translatesAutoresizingMaskIntoConstraints="NO" id="UAW-Cl-rGZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="relaxed-mind-title-black" translatesAutoresizingMaskIntoConstraints="NO" id="a9A-np-LML">
+                                <rect key="frame" x="55" y="22" width="220" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsO-F4-aGv">
+                                <rect key="frame" x="133" y="497" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="headphoneButton">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lockedProgramACTION:" destination="pEw-TD-vVA" eventType="touchUpInside" id="7zJ-94-mTB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asr-Xj-7Px" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3560" y="99"/>
+        </scene>
+        <!--Romantic Mind View Controller-->
+        <scene sceneID="U8h-2T-tEs">
+            <objects>
+                <viewController storyboardIdentifier="romanticMind" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x5l-vF-FZy" customClass="RomanticMindViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Msk-om-J8o"/>
+                        <viewControllerLayoutGuide type="bottom" id="zjl-di-Wq8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D2g-01-09d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="640x1136-romantic-mind-background" translatesAutoresizingMaskIntoConstraints="NO" id="S1Q-5I-w4B">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="romantic-mind-title-black" translatesAutoresizingMaskIntoConstraints="NO" id="cke-UM-005">
+                                <rect key="frame" x="55" y="22" width="220" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKH-Fu-mwM">
+                                <rect key="frame" x="133" y="497" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="headphoneButton">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lockedProgramACTION:" destination="x5l-vF-FZy" eventType="touchUpInside" id="N8K-yJ-P8C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoz-V7-Pa6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3986" y="64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="640x1136-awakened-mind-background" width="640" height="1136"/>
+        <image name="640x1136-creative-mind-background" width="640" height="1136"/>
+        <image name="640x1136-focused-mind-background" width="640" height="1136"/>
+        <image name="640x1136-relaxed-mind-background" width="640" height="1136"/>
+        <image name="640x1136-romantic-mind-background" width="640" height="1136"/>
+        <image name="awakened-mind-title-black" width="440" height="80"/>
+        <image name="creative-mind-title-black" width="440" height="80"/>
+        <image name="focused-mind-title-black" width="440" height="80"/>
+        <image name="headphoneButton" width="110" height="110"/>
+        <image name="homePageBrowseAudioTracksButton" width="475" height="83"/>
+        <image name="homePageMainText" width="592" height="153"/>
+        <image name="relaxed-mind-title-black" width="440" height="80"/>
+        <image name="romantic-mind-title-black" width="440" height="80"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

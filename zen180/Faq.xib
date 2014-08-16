@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FaqViewController">
+            <connections>
+                <outlet property="faqScrollView" destination="JAY-kC-zLe" id="THX-7v-Zae"/>
+                <outlet property="faqView" destination="O0w-Sh-24Z" id="nJl-R5-bIn"/>
+                <outlet property="view" destination="iN0-l3-epB" id="eIs-nq-rHn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akr-0v-ksZ">
+                    <rect key="frame" x="13" y="517" width="28" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="return_Black_48x48">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="toPreviousScreen:" destination="-1" eventType="touchUpInside" id="lgS-l9-jux"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIM-yH-f3l">
+                    <rect key="frame" x="276" y="514" width="34" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="round-question_48x48-black">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JAY-kC-zLe">
+                    <rect key="frame" x="13" y="57" width="297" height="452"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </scrollView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAQ's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcS-pM-RoA">
+                    <rect key="frame" x="137" y="36" width="47" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <view contentMode="scaleToFill" id="O0w-Sh-24Z">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="2360"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How do I use this app?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LX9-Nm-yRM" userLabel="How do I use this app?">
+                    <rect key="frame" x="70" y="9" width="181" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="29" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="rGO-kF-as5" userLabel="details">
+                    <rect key="frame" x="9" y="33" width="280" height="308"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text">Think of Zen180 as a background audio that you can listen to while reading, 
+studying, doing homework, meditating, etc… 
+First, you browse through the 5 tracks 
+and select the specific brain wave enhancement you are trying to achieve, next you will select the length of the track, we have a 5 min, 15 min, and 30 min version for each track. Then, just listen to the track while you go about doing what you were doing. Listen to “Focused Mind” while trying to focus on your studies or a task at work, listen to “Relaxed Mind” to help you wind down, and so forth. </string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is brain enhancement  audio technology?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="toM-61-PoA" userLabel="What is brain enhancement">
+                    <rect key="frame" x="8" y="372" width="280" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="qfx-Fh-YxZ" userLabel="details">
+                    <rect key="frame" x="9" y="427" width="280" height="519"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text">Your brain is continually generating electrical impulses that fluctuate rhythmically in distinct patterns called brain wave patterns. These patterns are closely correlated with your thoughts, your emotions, your state of being, and the functioning of the various systems of your body. 
+
+There are five main categories of brain wave patterns: 
+
+Delta (.1-3.9 Hz) - Associated to Peace, Relaxation, and Stress Relief. 
+Theta (4-7.9 Hz) - Associated to Creativity, Deep Meditation, and Intuition. 
+Alpha (8-13.9 Hz) - Associated to Super-Learning, Memorization, and Focus. 
+Beta (14-30 Hz) - Associated to Concentration, Arousal, and Alertness. 
+Gamma (30-40 Hz) - Associated to Love, Compassion, and Kindness. 
+
+We’ve engineered each of these 5 frequencies (using binaural beats) into our 5 main Zen180™ audio tracks to help your mind enter these states within minutes at the push of a button.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is binaural beats?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rO-f5-vQw" userLabel="What is binaural beats">
+                    <rect key="frame" x="7" y="992" width="280" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="75" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="283" translatesAutoresizingMaskIntoConstraints="NO" id="jm2-rF-bJY" userLabel="details">
+                    <rect key="frame" x="7" y="1026" width="283" height="1080"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text" base64-UTF8="YES">
+QmluYXVyYWwgYmVhdHMgd2VyZSBvcmlnaW5hbGx5IGRpc2NvdmVyZWQgaW4gMTgzOSBieSBwaHlzaWNp
+c3QgSGVpbnJpY2ggV2lsaGVsbSANCkRvdmUuIEhlIGRpc2NvdmVyZWQgd2hlbiBzaWduYWxzIG9mIHR3
+byBkaWZmZXJlbnQgZnJlcXVlbmNpZXMgYXJlIHByZXNlbnRlZCANCnNlcGFyYXRlbHksIG9uZSB0byBl
+YWNoIGVhciwgeW91ciBicmFpbiBkZXRlY3RzIHRoZSBwaGFzZSB2YXJpYXRpb24gYmV0d2VlbiB0aGUg
+DQpmcmVxdWVuY2llcyBhbmQgdHJpZXMgdG8gcmVjb25jaWxlIHRoYXQgZGlmZmVyZW5jZS4NCgpJbiBk
+b2luZyBzbywgYXMgdGhlIHR3byBmcmVxdWVuY2llcyBtZXNoIGluIGFuZCBvdXQgb2YgcGhhc2UsIHlv
+dXIgYnJhaW4gY3JlYXRlcyBpdHMgb3duIHRoaXJkIHNpZ25hbCDigJQgY2FsbGVkIGEgYmluYXVyYWwg
+YmVhdCDigJQgd2hpY2ggaXMgZXF1YWwgdG8gdGhlIGRpZmZlcmVuY2UgYmV0d2VlbiB0aG9zZSB0d28g
+ZnJlcXVlbmNpZXMuIA0K4oCoRm9yIGV4YW1wbGUsIGlmIGEgZnJlcXVlbmN5IG9mIDEwMCBIeiBpcyBw
+cmVzZW50ZWQgdG8geW91ciBsZWZ0IGVhciwgYW5kIGEgZnJlcXVlbmN5IG9mIDEwNSBIeiBpcyBwcmVz
+ZW50ZWQgdG8geW91ciByaWdodCBlYXIsIHlvdXIgYnJhaW4g4oCcaGVhcnPigJ0gYSB0aGlyZCBmcmVx
+dWVuY3kgcHVsc2luZyBhdCA1IEh6LCB0aGUgZXhhY3QgZGlmZmVyZW5jZSBiZXR3ZWVuIHRoZSB0d28g
+ZnJlcXVlbmNpZXMuIAoKUgBlc2VhcmNoIGhhcyBwcm92ZW4gdGhhdCBpbnRyb2R1Y2luZyBhIGJpbmF1
+cmFsIGJlYXQgd2lsbCBjYXVzZSB0aGUgYnJhaW4gdG8gYmVnaW4gcmVzb25hdGluZyBpbiB0dW5lIHdp
+dGggdGhhdCBiZWF0LiBCeSBjcmVhdGluZyBhIGJpbmF1cmFsIGJlYXQgYXQgMTAgSHog4oCUIGFuIEFs
+cGhhIGZyZXF1ZW5jeSDigJQgeW91IGNhbiB0cmlnZ2VyIHlvdXIgYnJhaW4gdG8gcmVzb25hdGUgYXQg
+dGhhdCBzYW1lIDEwIEh6IGZyZXF1ZW5jeSwgYXV0b21hdGljYWxseSBpbmR1Y2luZyBicmFpbiBhY3Rp
+dml0eSBpbiB0aGUgQWxwaGEgcmFuZ2UuIFRoaXMgc2FtZSB0ZWNobmlxdWUgY2FuIGJlIHVzZWQgdG8g
+cXVpY2tseSBhbmQgZWFzaWx5IGd1aWRlIHlvdXIgbWluZCBpbnRvIGFueSBzdGF0ZS4gDQrigKhXaGVu
+IHlvdXIgYnJhaW4gYmVnaW5zIHRvIHJlc29uYXRlIHdpdGggdGhlIGJpbmF1cmFsIGJlYXQsIG9yIOKA
+nGZvbGxvd+KAnSB0aGUgYmVhdCwgdGhpcyBlZmZlY3QgaXMgY2FsbGVkIHRoZSBGcmVxdWVuY3kgRm9s
+bG93aW5nIFJlc3BvbnNlLiBUaGlzIHBoZW5vbWVub24gd2FzIA0KdGhvcm91Z2hseSByZXNlYXJjaGVk
+IGFuZCB0ZXN0ZWQgaW4gMTk3MyBieSBiaW9waHlzaWNpc3QgR2VyYWxkIE9zdGVyIGF0IE1vdW50IA0K
+U2luYWkgSG9zcGl0YWwgaW4gTmV3IFlvcmsgQ2l0eS4gSGlzIHJlc2VhcmNoIG9uIGJpbmF1cmFsIGJl
+YXRzIGFuZCB0aGUgRnJlcXVlbmN5IEZvbGxvd2luZyBSZXNwb25zZSB3YXMgcHVibGlzaGVkIGluIFNj
+aWVudGlmaWMgQW1lcmljYW4gYW5kIHBhdmVkIHRoZSB3YXkgZm9yIGZ1cnRoZXIgZGV2ZWxvcG1lbnQg
+aW4gdGhlIGFyZWEgb2YgYXVkaXRvcnkgc3RpbXVsYXRpb24gdG8gZW5oYW5jZSBicmFpbiBmdW5jdGlv
+bmluZy4gDQoKU2luY2UgdGhhdCB0aW1lLCBiaW5hdXJhbCBiZWF0IHRlY2hub2xvZ3kgaGFzIGJlZW4g
+ZW5kb3JzZWQgYnkgdGhvdXNhbmRzIG9mIA0KZG9jdG9ycyBhbmQgc2NpZW50aXN0cyBhcm91bmQgdGhl
+IHdvcmxkLiANCgpCeSBpbnRyb2R1Y2luZyBzcGVjaWZpYyBmcmVxdWVuY2llcyB0byB5b3VyIGJyYWlu
+IHRocm91Z2ggdGhlIFplbjE4MOKEoiBhdWRpbyANCnRlY2hub2xvZ3ksIHlvdSBjYW4gZWZmb3J0bGVz
+c2x5IGFjaGlldmUgcG93ZXJmdWwgc3RhdGVzIG9mIGZvY3VzZWQgY29uY2VudHJhdGlvbiwgZGVlcCBy
+ZWxheGF0aW9uIGFuZCB6ZW4tbGlrZSBtZWRpdGF0aW9uLiA
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Some important notes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcq-Vc-Hfu" userLabel="Some important notes">
+                    <rect key="frame" x="7" y="2146" width="280" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="E1w-aT-d7I" userLabel="details">
+                    <rect key="frame" x="7" y="2160" width="288" height="169"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text">• Always use stereo headphones while
+  listening to Zen180™. 
+• Never listen to Zen180 while driving or
+  handling machinery. 
+• There are no right or wrong experiences.
+  Just enjoy the experience. 
+• If you have any questions please
+  contact us at
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzJ-LC-UIr">
+                    <rect key="frame" x="112" y="2293" width="154" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="support@zen180.com">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sendEmailToSupport:" destination="-1" eventType="touchUpInside" id="Hgz-B7-0Tr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="return_Black_48x48" width="48" height="48"/>
+        <image name="round-question_48x48-black" width="48" height="48"/>
+    </resources>
+</document>
